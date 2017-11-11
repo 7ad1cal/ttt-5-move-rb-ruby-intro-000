@@ -2,12 +2,11 @@
 
 require_relative '../lib/move.rb'
 
-def update_array_at_with(array, index, value)
+
+
+def move(array, index, value="X")
   array[index] = value
-end
-
-def move(array, index, value)
-
+  return array
 end
 # Code your CLI Here
 
@@ -20,6 +19,6 @@ answer = gets.strip
 answer = input_to_index(answer)
 
 
-update_array_at_with(board, answer, 'X')
+update_array_at_with(board, answer, user_move)
 
 display_board(board)
