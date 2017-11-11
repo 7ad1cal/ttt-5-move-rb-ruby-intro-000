@@ -19,6 +19,6 @@ answer = gets.strip
 answer = input_to_index(answer)
 
 
-update_array_at_with(board, answer, user_move)
+move(board, answer)
 
 display_board(board)
